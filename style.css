@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap");
+
+:root {
+  /* font */
+  --font-primary: "Manrope", sans-serif;
+
+  /* colors */
+  --color-black: #252323;
+  --color-white: #ffffff;
+  --color-fade-white: #e5e5e5;
+  --color-gray: #f9f9f9;
+  --color-pink: #ffbcbc;
+  --color-dark-pink: #612321;
+  --color-green: #4ce0b3;
+  --color-blue: #1e91d6 !important;
+  --color-purple: #b47aea;
+  --color-yellow: #ffdf64;
+}
+
+/* ===============default codes=============== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+  font-family: var(--font-primary);
+  background: var(--color-fade-white);
+}
+.container {
+  padding: 0;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none !important;
+  color: var(--color-black);
+}
+li {
+  list-style: none;
+}
+.nav-link {
+  padding: 0;
+}
+
+/* ============Typhography============= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.para-large,
+.para-small,
+.label {
+  font-style: normal;
+  color: var(--color-black) !important;
+  margin: 0;
+  padding: 0;
+}
+h1,
+.footer-title {
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 6.8rem;
+}
+h2 {
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 5.8rem;
+}
+h3 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 5rem;
+}
+h4,
+.para-large {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+}
+h5,
+.text-nav {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+h6 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+.para-small {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+.label {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.nav-link {
+  color: var(--color-black) !important;
+}
+
+/*=========== Header Section Styling ============*/
+.header {
+  margin-bottom: 28rem;
+}
+
+/* ============= Navbar ============ */
+.navbar {
+  margin-bottom: 18rem;
+  padding-top: 2rem;
+}
+.offcanvas-body {
+  padding: 0;
+}
+.offcanvas-end {
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  top: 6.2rem;
+  transform: translateY(100%);
+}
+.navbar-nav {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+}
+.nav-item::after {
+  content: " ";
+  width: 0;
+  margin: auto;
+  display: block;
+  height: 0.3rem;
+  border-radius: 4rem;
+  transition: all 0.5s ease;
+  background: var(--color-pink);
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.text-nav:hover {
+  color: var(--color-blue);
+  transition: all 0.5s ease;
+}
+/* ===========nav-toggler========== */
+.navbar-toggler {
+  border: 0;
+  display: unset;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  box-shadow: unset;
+  outline: none !important;
+  border: 0;
+}
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.navbar-toggler-icon {
+  background: black;
+  width: 2.8rem;
+  height: 0.4rem;
+  display: block;
+  transition: all 0.2s ease;
+  border-radius: 8rem;
+}
+
+/* ========== Hero Styling Section ============ */
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+.hero-title {
+  margin-bottom: 6rem;
+}
+.hero-title h1 {
+  max-width: 44ch;
+  margin: 0 auto;
+}
+.hero-contents {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+.hero-content-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-content-icon {
+  padding: 1rem;
+  background: var(--color-pink);
+  border-radius: 50%;
+}
+
+/* ============= Work Section Styling ============= */
+.work {
+  margin-bottom: 38rem;
+}
+.work-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 75.3rem);
+  grid-template-areas:
+    "one one "
+    "two three"
+    "four five";
+  grid-gap: 2rem;
+}
+.work-card-1 {
+  position: relative;
+  grid-area: one;
+  background: var(--color-pink);
+  border-radius: 3.2rem;
+}
+.work-link {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  background: var(--color-white);
+  padding: 1.2rem 2rem;
+  border-radius: 3rem;
+  box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+}
+.work-card-2 {
+  position: relative;
+  grid-area: two;
+  background: var(--color-blue);
+  border-radius: 3.2rem;
+}
+.work-card-3 {
+  position: relative;
+  grid-area: three;
+  background: var(--color-green);
+  border-radius: 3.2rem;
+}
+.work-card-4 {
+  position: relative;
+  grid-area: four;
+  background: var(--color-purple);
+  border-radius: 3.2rem;
+}
+.work-card-5 {
+  position: relative;
+  grid-area: five;
+  background: var(--color-pink);
+  border-radius: 3.2rem;
+}
+.work-card-1,
+.work-card-2,
+.work-card-3,
+.work-card-4,
+.work-card-5 {
+  box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+}
+
+/* ================ About me Section Styling ================ */
+.about-me {
+  margin-bottom: 26rem;
+}
+.about-me-items {
+  display: grid;
+  grid-template-columns: 1fr 36rem 24rem;
+  grid-template-rows: 1fr;
+  grid-template-areas: "about-text about-img-1 about-img-2";
+  grid-gap: 2rem;
+  align-items: center;
+}
+.about-me-text {
+  grid-area: about-text;
+}
+.about-me-text h2 {
+  margin-bottom: 6rem;
+}
+.about-me-img-1 {
+  grid-area: about-img-1;
+}
+.about-me-img-2 {
+  grid-area: about-img-2;
+}
+.about-me-img-2 > img:first-child {
+  margin-bottom: 2rem;
+}
+.about-me-img-1 > img,
+.about-me-img-2 > img {
+  box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+}
+/* ============= footer Styling ============== */
+.footer {
+  padding: 6rem;
+}
+.footer-chat {
+  border-radius: 2.4rem;
+  background: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60rem;
+  box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+  margin-bottom: 6rem;
+}
+.footer-chat a > p {
+  color: var(--color-blue);
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-menu {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+.footer-menu li a {
+  color: var(--color-black);
+}
+/* ================ Media Queries ================ */
+
+/* Media Queries for Tablet */
+@media screen and (max-width: 768px) {
+  /* .header */
+  .header {
+    margin-bottom: 16rem;
+  }
+  /* .navbar */
+  .navbar {
+    margin-bottom: 8rem;
+  }
+
+  /* work */
+  .work {
+    margin-bottom: 26rem;
+  }
+  .work-cards {
+    grid-template-rows: repeat(3, 40.6rem);
+  }
+
+  /* .about-me */
+  .about-me {
+    margin-bottom: 16rem;
+  }
+  .about-me-items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "about-text about-text"
+      "about-img-1 about-img-2";
+  }
+  .about-me-img-2 {
+    padding: 0 6rem;
+  }
+
+  /* footer */
+  .footer-chat {
+    height: 40rem;
+  }
+  .footer-menu {
+    gap: 2rem;
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* .header */
+  .header {
+    margin-bottom: 10rem;
+  }
+  /* .navbar */
+  .offcanvas-end {
+    height: 100%;
+    transform: translateX(-100%);
+  }
+  .navbar-nav {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+  }
+
+  /* .hero */
+  .hero-title h1 {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .hero-contents {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .hero-content-items {
+    flex-direction: column;
+  }
+
+  /* work */
+  .work {
+    margin-bottom: 10rem;
+  }
+  .work-card-1 {
+    display: none;
+  }
+  .work-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 45.6rem);
+    grid-template-areas:
+      "two"
+      "three"
+      "four"
+      "five";
+  }
+
+  /* .about-me */
+  h2 {
+    font-size: 3rem;
+    line-height: 4.8rem;
+  }
+  .about-me {
+    margin-bottom: 8rem;
+  }
+  .about-me-text h2 {
+    margin-bottom: 2rem;
+  }
+  .about-me-items {
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "about-text"
+      "about-img-1";
+  }
+  .about-me-img-2 {
+    display: none;
+  }
+
+  /* .footer */
+  .footer {
+    padding: 2rem;
+    text-align: center;
+  }
+  .footer-chat {
+    height: 30rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+  }
+  .footer-chat h1,
+  .footer-title {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-menu {
+    gap: 4rem;
+  }
+}
