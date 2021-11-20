@@ -216,7 +216,7 @@ h6 {
 .work-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 75.3rem);
+  grid-template-rows: repeat(3, 80rem);
   grid-template-areas:
     "one one "
     "two three"
@@ -268,6 +268,14 @@ h6 {
 .work-card-4,
 .work-card-5 {
   box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+}
+.work-card-2 > img,
+.work-card-3 > img,
+.work-card-4 > img,
+.work-card-5 > img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* ================ About me Section Styling ================ */
@@ -350,7 +358,7 @@ h6 {
     margin-bottom: 26rem;
   }
   .work-cards {
-    grid-template-rows: repeat(3, 40.6rem);
+    grid-template-rows: repeat(3, 40rem);
   }
 
   /* .about-me */
@@ -395,7 +403,6 @@ h6 {
   .navbar-nav {
     flex-direction: column;
     gap: 2rem;
-    align-items: flex-start;
     padding: 4rem 2rem;
   }
 
@@ -421,7 +428,7 @@ h6 {
   }
   .work-cards {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 45.6rem);
+    grid-template-rows: repeat(4, 46rem);
     grid-template-areas:
       "two"
       "three"
