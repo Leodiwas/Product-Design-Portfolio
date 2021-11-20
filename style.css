@@ -49,6 +49,14 @@ li {
   padding: 0;
 }
 
+/* ============ Utilities =============== */
+.bg-blue {
+  background: var(--color-blue) !important;
+}
+.bg-green {
+  background: var(--color-green);
+}
+
 /* ============Typhography============= */
 h1,
 h2,
@@ -241,13 +249,13 @@ h6 {
 .work-card-2 {
   position: relative;
   grid-area: two;
-  background: var(--color-blue);
+  background: var(--color-blue) !important;
   border-radius: 3.2rem;
 }
 .work-card-3 {
   position: relative;
   grid-area: three;
-  background: var(--color-green);
+  background: var(--color-green) !important;
   border-radius: 3.2rem;
 }
 .work-card-4 {
@@ -340,6 +348,61 @@ h6 {
 .footer-menu li a {
   color: var(--color-black);
 }
+
+/* ================ ABOUT PAGE STYLING =================== */
+/* header */
+.about-page-header {
+  margin-bottom: 20rem !important;
+}
+
+/* .about-img-gallery */
+.about-img-gallery-box {
+  display: grid;
+  grid-template-columns: repeat(4, 34rem);
+  grid-template-rows: 80rem;
+  grid-gap: 2rem;
+  align-items: center;
+  margin-bottom: 24rem;
+}
+.gallery-img:nth-child(2) > img:first-child {
+  margin-bottom: 2rem;
+}
+.gallery-img:nth-child(3) > img {
+  transform: translateY(-6rem);
+}
+.gallery-text {
+  max-width: 88rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 24rem;
+}
+.gallery-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 28rem;
+  height: 100%;
+}
+
+/* =================== Project-Card ================== */
+.about-page-project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80rem;
+  grid-template-areas: "p-card-1 p-card-2";
+  position: relative;
+  margin-bottom: 24rem;
+}
+.project-title {
+  margin-bottom: 4rem;
+}
+.project-card-1 {
+  grid-area: p-card-1;
+}
+.project-card-2 {
+  grid-area: p-card-2;
+}
 /* ================ Media Queries ================ */
 
 /* Media Queries for Tablet */
@@ -382,6 +445,30 @@ h6 {
   }
   .footer-menu {
     gap: 2rem;
+  }
+
+  /* About Page */
+  .about-page-header {
+    margin-bottom: 10rem !important;
+  }
+  /* .about-img-gallery */
+  .about-img-gallery-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 60rem);
+    margin-bottom: 14rem;
+  }
+  .gallery-text {
+    margin-bottom: 14rem;
+  }
+  .gallery-details {
+    margin-bottom: 6rem;
+  }
+
+  /* project */
+  .about-page-project-cards {
+    grid-template-areas: "p-card-1 p-card-2";
+    grid-template-rows: 40rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -480,5 +567,40 @@ h6 {
   }
   .footer-menu {
     gap: 4rem;
+  }
+
+  /* About Page */
+  .about-page-header {
+    margin-bottom: 0rem !important;
+  }
+  /* .about-img-gallery */
+  .about-img-gallery {
+    margin-bottom: 6rem;
+  }
+  .about-img-gallery-box {
+    grid-template-rows: repeat(2, 34rem);
+    margin-bottom: 4rem;
+  }
+  .gallery-text {
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+  .gallery-details {
+    margin-bottom: 4rem;
+    text-align: center;
+    gap: 2.6rem;
+  }
+
+  /* project */
+  .project-title {
+    text-align: center;
+  }
+  .about-page-project-cards {
+    grid-template-areas:
+      "p-card-1"
+      "p-card-2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 44rem 44rem;
+    margin-bottom: 8rem;
   }
 }
