@@ -404,6 +404,21 @@ h6 {
 .project-card-2 {
   grid-area: p-card-2;
 }
+
+/* ============= Server Video Page Styling =============== */
+.server_video-header {
+  background: var(--color-pink);
+  height: 89.5vh;
+  /* height: 100%; */
+  position: relative;
+}
+.server_video-header-img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
 /* ================ Media Queries ================ */
 
 /* Media Queries for Tablet */
@@ -470,6 +485,11 @@ h6 {
     grid-template-areas: "p-card-1 p-card-2";
     grid-template-rows: 40rem;
     margin-bottom: 8rem;
+  }
+
+  /* ============= Server Video Page Styling =============== */
+  .server_video-header {
+    height: 31.6vh;
   }
 }
 
@@ -609,5 +629,14 @@ h6 {
     grid-template-columns: 1fr;
     grid-template-rows: 44rem 44rem;
     margin-bottom: 8rem;
+  }
+
+  /* ============= Server Video Page Styling =============== */
+  .server_video-header {
+    height: 20.9vh;
+  }
+  .server_video-header-img {
+    left: 56%;
+    transform: translateX(-56%);
   }
 }
