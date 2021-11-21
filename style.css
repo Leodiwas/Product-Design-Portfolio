@@ -131,6 +131,7 @@ h6 {
 }
 .offcanvas-body {
   padding: 0;
+  overflow: hidden !important;
 }
 .offcanvas-end {
   left: 0;
@@ -474,6 +475,12 @@ h6 {
 
 /* Media Queries for Mobile */
 @media screen and (max-width: 480px) {
+  h4,
+  .para-large {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
   .container {
     padding: 0 1rem;
   }
