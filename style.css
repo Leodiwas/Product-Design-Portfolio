@@ -441,6 +441,40 @@ h6 {
   border-radius: 2.4rem;
   margin-bottom: 16rem;
 }
+/* server_video-content-3 */
+.server_video-content-3 {
+  margin-bottom: 16rem;
+}
+.server_video-content-3-title {
+  max-width: 92rem;
+  margin: auto;
+}
+/* server_video-content-4 */
+.server_video-content-4 {
+  padding: 8rem 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-gray);
+  border-radius: 2.4rem;
+  margin-bottom: 16rem;
+}
+.server_video-content-5 {
+  max-width: 88rem;
+  margin: auto;
+  margin-bottom: 16rem;
+}
+.server_video-content-5 h2,
+.server_video-content-5 > p,
+.server_video-content-5-info-title {
+  margin-bottom: 4rem;
+}
+.server_video-content-5-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /* ================ Media Queries ================ */
 
 /* Media Queries for Tablet */
@@ -509,7 +543,7 @@ h6 {
     margin-bottom: 8rem;
   }
 
-  /* ============= Server Video Page Styling =============== */
+  /* ==== Server Video Page Styling ===== */
   /* Header */
   .server_video-header {
     height: 31.6vh;
@@ -517,7 +551,10 @@ h6 {
   }
   /* .server_video-contents*/
   .server_video-content-1,
-  .server_video-content-2 {
+  .server_video-content-2,
+  .server_video-content-3,
+  .server_video-content-4,
+  .server_video-content-5 {
     margin-bottom: 12rem;
   }
   .server_video-content-1 {
@@ -527,10 +564,29 @@ h6 {
     font-size: 2.2rem;
     line-height: 4rem;
   }
+  .server_video-content-2,
+  .server_video-content-4 {
+    padding: 8rem 10rem;
+  }
+  .server_video-content-4 {
+    padding: 8rem;
+  }
+  /* .server_video-content-5 */
+  .server_video-content-5 h2,
+  .server_video-content-5 > p,
+  .server_video-content-5-info-title {
+    margin-bottom: 2rem;
+  }
 }
+
+/* =================================================== */
 
 /* Media Queries for Mobile */
 @media screen and (max-width: 480px) {
+  h3 {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+  }
   h4,
   .para-large {
     font-weight: 500;
@@ -557,7 +613,7 @@ h6 {
   }
 
   /* .hero */
-  .hero-title h1 {
+  h1 {
     font-size: 3.2rem;
     line-height: 4.8rem;
   }
@@ -679,15 +735,16 @@ h6 {
     display: none !important;
   }
   .server_video-content-1,
-  .server_video-content-2 {
+  .server_video-content-2,
+  .server_video-content-3,
+  .server_video-content-4,
+  .server_video-content-5 {
     margin-bottom: 6rem;
-  }
-  .server_video-content-1 {
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
   }
-  .server_video-content-2 {
+  .server_video-content-2,
+  .server_video-content-4 {
     padding: 2rem;
   }
 }
