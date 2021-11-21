@@ -669,14 +669,14 @@ h6 {
 
   /* ============= Server Video Page Styling =============== */
   .server_video-header {
-    height: 8vh !important;
+    height: 10vh !important;
   }
   /* .navbar */
   .server_video-navbar {
-    margin-bottom: 6rem !important;
+    margin-bottom: 0 !important;
   }
-  .server_video-header-img {
-    display: none;
+  .server_video-header .hero {
+    display: none !important;
   }
   .server_video-content-1,
   .server_video-content-2 {
