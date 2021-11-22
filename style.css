@@ -637,6 +637,20 @@ h6 {
   margin-bottom: 16rem;
 }
 
+/* ================ GROWTH PAGE STYLING ================ */
+.growth-header {
+  background: var(--color-blue);
+  margin-bottom: 12rem;
+}
+.growth-navbar {
+  margin-bottom: 0 !important;
+}
+.growth_page .server_video-contents-8-img-box-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ================ Media Queries ================ */
 
 /* Media Queries for Tablet */
@@ -723,9 +737,14 @@ h6 {
   .server_video-content-4,
   .server_video-content-5,
   .server_video-content-6,
+  .server_video-content-7,
+  .server_video-contents-8,
+  .server_video-contents-9,
   .server_video-contents-10,
   .server_video-contents-11,
-  .server_video-contents-12 {
+  .server_video-contents-12,
+  .server_video-contents-13,
+  .server_video-contents-14 {
     margin-bottom: 12rem;
   }
   .server_video-content-1 {
@@ -788,6 +807,11 @@ h6 {
     > div:nth-child(2)
     > div {
     display: none;
+  }
+
+  /* Growth Page */
+  .growth-header {
+    margin-bottom: 12rem;
   }
 }
 
@@ -1003,5 +1027,11 @@ h6 {
   }
   .server_video-contents-14-img {
     padding: 2rem;
+  }
+
+  /* Growth Page */
+  .growth_page .server_video-contents-8-img-box-bottom {
+    display: block;
+    padding: 2rem 4rem;
   }
 }
