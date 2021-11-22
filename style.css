@@ -54,6 +54,18 @@ li {
 .font-7 {
   font-weight: 700;
 }
+/* ============== scroll bar =========== */
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue);
+  border-radius: 0.8rem;
+  height: 6rem;
+}
 /* ============ Utilities =============== */
 .bg-blue {
   background: var(--color-blue) !important;
@@ -649,6 +661,15 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ============ DESIIGN PAGE STYLING ============= */
+.design-header {
+  background: var(--color-green);
+  margin-bottom: 12rem;
+}
+.design-header-img {
+  transform: translateY(2.1rem);
 }
 
 /* ================ Media Queries ================ */
