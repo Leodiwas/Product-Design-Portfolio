@@ -672,6 +672,15 @@ h6 {
   transform: translateY(2.1rem);
 }
 
+/* ============ DESTINY PAGE STYLING ============= */
+.destiny-header {
+  background: var(--color-purple);
+  margin-bottom: 12rem;
+}
+.destiny_page .server_video-content-5-info-details .para-small:nth-child(3) {
+  margin-bottom: 8rem;
+}
+
 /* ================ Media Queries ================ */
 
 /* Media Queries for Tablet */
@@ -833,6 +842,11 @@ h6 {
   /* Growth Page */
   .growth-header {
     margin-bottom: 12rem;
+  }
+
+  /* Destiny page */
+  .destiny_page .server_video-content-5-info-details .para-small:nth-child(3) {
+    margin-bottom: 6rem;
   }
 }
 
@@ -1054,5 +1068,10 @@ h6 {
   .growth_page .server_video-contents-8-img-box-bottom {
     display: block;
     padding: 2rem 4rem;
+  }
+
+  /* Destiny page */
+  .destiny_page .server_video-content-5-info-details .para-small:nth-child(3) {
+    margin-bottom: 4rem;
   }
 }
