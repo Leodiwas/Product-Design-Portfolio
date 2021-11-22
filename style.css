@@ -268,6 +268,16 @@ h6 {
   padding: 1.2rem 2rem;
   border-radius: 3rem;
   box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+.work-link:hover {
+  background: var(--color-dark-pink);
+  color: var(--color-white) !important;
+  transform: translateX(1.6rem);
+}
+.work-link:hover a {
+  color: var(--color-white);
 }
 .work-card-2 {
   position: relative;
